@@ -28,26 +28,29 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`delta-cvs hello`](#delta-cvs-hello)
+* [`delta-cvs convert SOURCE`](#delta-cvs-convert-source)
 * [`delta-cvs help [COMMAND]`](#delta-cvs-help-command)
 
-## `delta-cvs hello`
+## `delta-cvs convert SOURCE`
 
 Describe the command here
 
 ```
 USAGE
-  $ delta-cvs hello
+  $ delta-cvs convert SOURCE
 
 OPTIONS
-  -n, --name=name  name to print
+  -f, --format=format  [default: default] format to convert
+  -o, --output=output  [default: E:\Projects\Mine\delta-cvs] directory to write output
+  --help               show CLI help
+  --version            show CLI version
 
 DESCRIPTION
   ...
   Extra documentation goes here
 ```
 
-_See code: [src\commands\hello.js](https://github.com/airtonix/delta-cvs/blob/v0.0.0/src\commands\hello.js)_
+_See code: [src\commands\convert.js](https://github.com/airtonix/delta-cvs/blob/v0.0.0/src\commands\convert.js)_
 
 ## `delta-cvs help [COMMAND]`
 
