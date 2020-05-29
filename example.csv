@@ -1,0 +1,16 @@
+transactionId, creationTime, recordType, action, currency, amount, description, balance, referenceId
+yyyyyyyy01,2020-01-01T12:00:00Z,Fund Transfer,Deposit,AUD,1,EFT Deposit  AUD 1,1,xxxxxxxx20
+yyyyyyyy02,2020-01-01T12:00:00Z,Fund Transfer,Deposit,AUD,100,EFT Deposit  AUD 100,101,xxxxxxxx21
+
+yyyyyyyy03,2020-01-01T12:01:00Z,Trade,Buy Order,AUD,-100.1485852,Buy 1 @ AUD 100 Fully matched at 100,xxxxxxxx22
+yyyyyyyy04,2020-01-01T12:01:00Z,Trade,Buy Order,BTC,1,Buy 1 @ AUD 100 Trade settled,1,xxxxxxxx22
+yyyyyyyy05,2020-01-01T12:01:00Z,Trade,Trading Fee,AUD,-1,Buy 1BTC @ AUD 100 Trading fee,0,xxxxxxxx22
+
+yyyyyyyy06,2020-01-01T12:02:00Z,Fund Transfer,Deposit,AUD,10,EFT Deposit  AUD 10,10,xxxxxxxx23
+yyyyyyyy07,2020-01-01T12:03:00Z,Fund Transfer,Deposit,AUD,1000,EFT Deposit  AUD 1000,1010,xxxxxxxx24
+
+yyyyyyyy08,2020-01-01T12:04:00Z,Trade,Buy Order,AUD,-1000,Buy 10 @ AUD 100 Fully matched at 100,10,xxxxxxxx25
+yyyyyyyy09,2020-01-01T12:04:00Z,Trade,Buy Order,BTC,10,Buy 10 @ AUD 100 Trade settled,11,xxxxxxxx25
+yyyyyyyy10,2020-01-01T12:04:00Z,Trade,Trading Fee,AUD,-10,Buy 10 @ AUD 100 Trading fee,0,xxxxxxxx25
+
+yyyyyyyy11,2020-01-01T12:05:00Z,Fund Transfer,Withdraw,BTC,11,BTC_WALLET_ADDRESS_HERE,0,xxxxxxxx26
