@@ -1,0 +1,59 @@
+{
+  "name": "delta-cvs",
+  "version": "0.0.0",
+  "author": "Zenobius @airtonix",
+  "bin": {
+    "delta-cvs": "./bin/run"
+  },
+  "bugs": "https://github.com/airtonix/delta-cvs/issues",
+  "dependencies": {
+    "@oclif/command": "^1.6.1",
+    "@oclif/config": "^1.15.1",
+    "@oclif/errors": "^1.2.2",
+    "@oclif/plugin-help": "^3.0.1",
+    "fs-jetpack": "^2.4.0",
+    "neat-csv": "^5.2.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "@oclif/test": "^1.2.6",
+    "chai": "^4.2.0",
+    "del": "^5.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-oclif": "^3.1.0",
+    "globby": "^10.0.2",
+    "jest": "^26.0.1",
+    "jest-spec-reporter": "^1.0.13",
+    "rimraf": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=11.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/airtonix/delta-cvs",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "delta-cvs",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "airtonix/delta-cvs",
+  "scripts": {
+    "postpack": "rimraf oclif.manifest.json",
+    "posttest": "eslint .",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "jest --config ./jest/config.js --ci --all --verbose ./src",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
