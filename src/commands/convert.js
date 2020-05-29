@@ -13,6 +13,7 @@ class ConvertCommand extends Command {
 
     const convertor = new Convertor({format})
     const result = await convertor.process(storage.contents)
+    this.log(result)
   }
 }
 
@@ -29,7 +30,7 @@ ConvertCommand.flags = {
   version: flags.version(),
   help: flags.help(),
   format: flags.string({char: 'f', description: 'format to convert', default: 'default'}),
-  output: flags.string({char: 'o', description: 'directory to write output', default: process.cwd()}),
+  output: flags.string({char: 'o', description: 'directory to write output', default: './'}),
 }
 
 module.exports = ConvertCommand

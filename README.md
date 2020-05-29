@@ -41,7 +41,7 @@ USAGE
 
 OPTIONS
   -f, --format=format  [default: default] format to convert
-  -o, --output=output  [default: E:\Projects\Mine\delta-cvs] directory to write output
+  -o, --output=output  [default: ./] directory to write output
   --help               show CLI help
   --version            show CLI version
 
